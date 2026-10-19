@@ -1,6 +1,6 @@
-// Configure depois de criar um projeto Supabase. A chave anon/publishable é pública;
-// a segurança vem das políticas RLS do arquivo database/schema.sql.
+# Supabase configuration for the public study site.
+# Publishable keys are intended to be included in client-side code.
 window.STUDY_CONFIG = {
-  supabaseUrl: '',
-  supabaseAnonKey: ''
+  supabaseUrl: 'https://udlbouqxbadyjkrwfzws.supabase.co',
+  supabaseAnonKey: 'sb_publishable_EfiOWzxTlEd1x3GDZEx0Gg_OkddR741'
 };

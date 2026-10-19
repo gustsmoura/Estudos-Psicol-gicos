@@ -12,10 +12,9 @@ Plataforma de revisão de Gestão de Pessoas publicada como site estático no Gi
 
 O GitHub Pages não oferece banco de dados. Para ativar o mural coletivo, o projeto usa um banco Supabase opcional:
 
-1. Crie um projeto Supabase e abra o **SQL Editor**.
-2. Execute o conteúdo de `database/schema.sql`. As políticas RLS permitem leitura e envio anônimo apenas para a tabela de respostas de estudo.
-3. No painel do Supabase, copie a URL do projeto e a chave **anon/publishable**.
-4. Preencha `supabase-config.js` com esses dois valores e publique a alteração no GitHub Pages.
+1. O projeto Supabase já está conectado em `supabase-config.js` com a URL e a chave publishable fornecidas para este site.
+2. No projeto Supabase, abra o **SQL Editor** e execute o conteúdo de `database/schema.sql`. As políticas RLS permitem leitura e envio anônimo apenas para a tabela de respostas de estudo.
+3. Recarregue o site. Ele verifica se a tabela existe e só então libera o envio coletivo.
 
 A chave pública pode aparecer no código do site; nunca coloque uma chave `service_role` nele. O mural é público: respostas enviadas poderão ser lidas por qualquer pessoa que visite o site. O envio é opcional e exige marcar a autorização na tela. Não inclua nome, e-mail ou outros dados pessoais. Enquanto o banco não estiver configurado, os rascunhos continuam apenas no aparelho e o envio coletivo permanece desativado.
 
