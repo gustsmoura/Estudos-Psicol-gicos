@@ -6,10 +6,8 @@ Portal de estudos de Psicologia publicado no GitHub Pages. A página inicial org
 
 - Catálogo pesquisável das disciplinas disponíveis e futuras.
 - Acesso à trilha de Gestão de Pessoas em `gestao-de-pessoas.html`.
-- Seções sobre método de estudo, fontes, responsabilidade ética e uma possível IA educacional futura.
+- Seções sobre método de estudo, fontes, responsabilidade ética e ferramentas de estudo que podem crescer com o portal.
 - Trilhas marcadas como “em construção” ainda não têm conteúdo publicado.
-
-A proposta de IA é apenas planejada: uma implementação futura exigiria fontes de Psicologia selecionadas, serviço de servidor para proteger a chave e limites explícitos para não oferecer diagnóstico ou terapia.
 
 ## As três partes da disciplina
 
