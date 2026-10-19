@@ -3,80 +3,84 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f6f3eb">
-  <meta name="description" content="Conteúdos, questões, cartões e escrita discursiva para estudar Gestão de Pessoas.">
-  <title>Revisa — Gestão de Pessoas</title>
+  <meta name="theme-color" content="#f5f3ed">
+  <meta name="description" content="Um portal para aprender Psicologia com conteúdo, prática, referências e estudo conectado.">
+  <title>Psi em Curso — Portal de estudos de Psicologia</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <script src="supabase-config.js?v=caf841a"></script>
-  <script src="app.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="portal.css">
+  <script src="portal.js" defer></script>
 </head>
 <body>
-  <header class="topbar">
-    <a class="brand" href="#inicio" aria-label="Revisa, início"><span class="brand-mark">R</span>revisa<span class="brand-dot">.</span></a>
-    <span class="course-label">GESTÃO DE PESSOAS <span class="topbar-sep">/</span> REVISÃO</span>
+  <header class="site-header">
+    <a class="wordmark" href="#inicio" aria-label="Psi em Curso, início"><span class="logo-symbol">ψ</span><span>Psi em Curso<span class="wordmark-dot">.</span></span></a>
+    <nav class="desktop-nav" aria-label="Navegação principal"><a href="#disciplinas">Disciplinas</a><a href="#como-estudar">Como estudar</a><a href="#sobre">Sobre o portal</a></nav>
+    <a class="header-cta" href="#disciplinas">Explorar disciplinas <span>↗</span></a>
   </header>
-  <nav class="part-nav" aria-label="Partes do site">
-    <a class="part-link active" href="#conteudos"><span>01</span> Ler conteúdos</a>
-    <a class="part-link" href="#pratica"><span>02</span> Praticar</a>
-    <a class="part-link" href="#escrever"><span>03</span> Escrever resposta</a>
-  </nav>
+
   <main id="inicio">
-    <section class="hero" id="apresentacao">
+    <section class="hero">
       <div class="hero-copy">
-        <p class="eyebrow">UM CADERNO DE ESTUDO COMPARTILHÁVEL</p>
-        <h1>Gestão de Pessoas<br><em>com sentido.</em></h1>
-        <p class="hero-text">Leia os conceitos, pratique com casos e escreva respostas discursivas no estilo ENADE. Seu rascunho fica salvo neste aparelho.</p>
-        <div class="hero-actions"><a class="button primary" href="#conteudos">Começar pela leitura <span>↓</span></a><a class="button quiet" href="#pratica">Ir para a prática <span>↗</span></a></div>
+        <p class="eyebrow"><span class="eyebrow-dot"></span> UM ESPAÇO PARA APRENDER PSICOLOGIA</p>
+        <h1>Conhecimento que<br>se conecta com <em>a vida.</em></h1>
+        <p class="hero-intro">Um portal de estudos feito para estudantes de Psicologia: conteúdo com contexto, prática ativa e espaço para construir respostas próprias.</p>
+        <div class="hero-actions"><a class="button button-dark" href="#disciplinas">Encontrar uma disciplina <span>↓</span></a><a class="text-link" href="#como-estudar">Conheça a proposta <span>↗</span></a></div>
+        <div class="hero-note"><span class="note-line"></span><span>Estudo com pensamento crítico, cuidado e boas referências.</span></div>
       </div>
-      <div class="hero-art" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="sun"></div><div class="float-card card-a"><span>CONCEITO</span><b>Entender o contexto</b></div><div class="float-card card-b"><span>APLICAÇÃO</span><b>Propor uma ação</b></div><p class="art-caption">LER <span>·</span> PRATICAR <span>·</span> ESCREVER</p></div>
-    </section>
-
-    <section class="content-section" id="conteudos">
-      <div class="section-heading"><div><p class="eyebrow">PARTE 01 / LEITURA E REFERÊNCIAS</p><h2>Conteúdos para revisar</h2><p class="section-sub">Sínteses para orientar o estudo. Abra o mapa mental e consulte os materiais usados na preparação.</p></div></div>
-      <figure class="mindmap-card"><img src="assets/Mapa-Mental-Gestao-de-Pessoas.png" alt="Mapa mental com os temas de Gestão de Pessoas, do trabalho e cultura até motivação, burnout e resposta estilo ENADE" loading="lazy"><figcaption><span>Mapa mental da disciplina</span><span class="download-links"><a href="assets/Mapa-Mental-Gestao-de-Pessoas.png" download>Baixar imagem ↓</a><a href="assets/Guia-Revisao-Gestao-de-Pessoas.pdf" download>Baixar guia em PDF ↓</a></span></figcaption></figure>
-      <div class="topic-grid">
-        <article class="topic-card"><span class="topic-number">01</span><h3>Trabalho, organizações e POT</h3><p>O trabalho transforma pessoas e sociedade e acontece em condições históricas, relações de poder e regras organizacionais. A Psicologia Organizacional e do Trabalho observa atividades, relações e contextos; a Gestão de Pessoas organiza decisões sobre atrair, aplicar, desenvolver, reconhecer e manter pessoas.</p></article>
-        <article class="topic-card"><span class="topic-number">02</span><h3>Pessoa, competências e atitudes</h3><p>Personalidade, valores e atitudes ajudam a compreender padrões de ação, mas precisam ser analisados junto com a situação. Competência integra conhecimentos, habilidades e atitudes (CHA). Hard skills são técnicas; soft skills envolvem, por exemplo, comunicação, cooperação e negociação.</p></article>
-        <article class="topic-card"><span class="topic-number">03</span><h3>Grupos, equipes e conflitos</h3><p>Equipes dependem de interdependência e coordenação. Conflitos podem envolver tarefa, processo ou relacionamento. A resposta pode ser competição, acomodação, evitação, compromisso ou colaboração; a escolha depende dos interesses, da urgência e da importância da relação.</p></article>
-        <article class="topic-card"><span class="topic-number">04</span><h3>Cultura e clima</h3><p>Cultura reúne significados, valores e pressupostos construídos historicamente. Clima descreve percepções sobre práticas, políticas e relações em determinado período. Em Schein, a cultura pode ser observada por artefatos, valores declarados e pressupostos básicos.</p></article>
-        <article class="topic-card"><span class="topic-number">05</span><h3>Gestão integrada e seleção</h3><p>Os processos de Gestão de Pessoas incluem agregar, aplicar, recompensar, desenvolver, manter e acompanhar. A seleção compara evidências das pessoas candidatas com critérios do trabalho. Entrevistas comportamentais investigam contexto, ação e resultado (CAR).</p></article>
-        <article class="topic-card"><span class="topic-number">06</span><h3>Desenvolvimento e avaliação</h3><p>O treinamento deve partir de necessidades da organização, das tarefas e das pessoas. Avalie reação, aprendizagem, mudança de comportamento e resultados. Avaliação psicológica é um processo de coleta e integração de informações para uma pergunta definida, não sinônimo de aplicação isolada de teste.</p></article>
-        <article class="topic-card"><span class="topic-number">07</span><h3>Emoções e motivação</h3><p>Motivação orienta, ativa e sustenta ações. Considere necessidades, valores, expectativas, emoções e contexto. Metas claras, autonomia compatível, recursos, feedback de processo e reconhecimento justo podem favorecer envolvimento; não reduza o desempenho à vontade individual.</p></article>
-        <article class="topic-card"><span class="topic-number">08</span><h3>Estresse e burnout</h3><p>Fontes de estresse incluem fatores da tarefa, papel organizacional, carreira, relações, estrutura/clima e interface trabalho-vida. Burnout envolve exaustão, cinismo ou distanciamento e redução da eficácia. A análise deve considerar condições e organização do trabalho.</p></article>
+      <div class="hero-visual" aria-label="Ilustração de ideias de Psicologia conectadas">
+        <div class="visual-grid"></div><div class="visual-orbit orbit-a"></div><div class="visual-orbit orbit-b"></div><div class="visual-center"><span>ψ</span><small>PESSOA<br>+ CONTEXTO</small></div>
+        <div class="orbit-label label-one"><i>01</i><span>ideias</span></div><div class="orbit-label label-two"><i>02</i><span>prática</span></div><div class="orbit-label label-three"><i>03</i><span>reflexão</span></div>
+        <div class="visual-caption">PSICOLOGIA SE APRENDE EM RELAÇÃO</div>
       </div>
-      <aside class="study-callout"><strong>Para a prova</strong><span>Use fatos do enunciado, explique o conceito, aplique-o ao caso e proponha uma intervenção com responsáveis e forma de avaliação.</span></aside>
-      <details class="sources"><summary>Ver os materiais usados nesta revisão</summary><div class="source-content"><p>As sínteses, os cartões, os estudos de caso e o mapa mental foram preparados a partir dos materiais da disciplina abaixo. Consulte os arquivos da aula para aprofundar cada tema.</p><ul>
-        <li>Estudo dirigido — Gestão de Pessoas (2026.2)</li>
-        <li>Contrato Pedagógico 26.2 — Gestão de Pessoas</li>
-        <li>Cronograma 2026-2 — UC Gestão de Pessoas</li>
-        <li>Atividade de Consultoria em Psicologia Organizacional</li>
-        <li>Aula: Sentimentos, Emoções e Motivação</li>
-        <li>Aula: Ética Profissional e Competências para a atuação do psicólogo</li>
-        <li>E-book: Competências para a atuação em Psicologia Organizacional e do Trabalho</li>
-        <li>Aula: Avaliação Psicológica nas Organizações</li>
-        <li>Aula: Dinâmica de Grupo nas Organizações</li>
-        <li>Aula: Relações Interpessoais e Conflito</li>
-        <li>Aula: Seleção por Competência</li>
-      </ul><p class="source-note">O estudo dirigido orienta a priorização dos conteúdos. As respostas-modelo do site são exemplos para estudo, não gabaritos oficiais.</p></div></details>
+      <div class="hero-bottom"><span>CONTEÚDO PARA ESTUDAR</span><span class="hero-bottom-mark">✳</span><span>FERRAMENTAS PARA PRATICAR</span><span class="hero-bottom-mark">✳</span><span>APRENDIZAGEM COMPARTILHADA</span></div>
     </section>
 
-    <section id="pratica" class="content-section alternate">
-      <div class="section-heading"><div><p class="eyebrow">PARTE 02 / QUESTÕES, CASOS E CARTÕES</p><h2>Aprender fazendo</h2><p class="section-sub">Escolha um caso para ler, revele uma resposta de referência e depois treine a sua na terceira parte.</p></div><div class="pill">Casos + revisão ativa</div></div>
-      <div class="practice-layout"><aside class="question-list" id="questionList" aria-label="Escolher estudo de caso"></aside><article class="question-panel"><div class="question-meta"><span id="questionCategory" class="tag">ESTUDO DE CASO</span><span id="questionNumber">CASO 01</span></div><h3 id="questionTitle"></h3><p id="questionPrompt" class="case-text"></p><div class="case-actions"><button id="showModel" class="button quiet">Ver resposta de referência <span>⌄</span></button><button id="goWrite" class="button primary">Escrever minha resposta <span>↗</span></button></div><div id="modelAnswer" class="model-answer" hidden></div></article></div>
-      <div class="flashcard-section"><div class="section-heading compact"><div><p class="eyebrow">REVISÃO ATIVA</p><h2>Cartões de estudo</h2><p class="section-sub">Tente lembrar a resposta antes de virar o cartão.</p></div><div class="card-counter"><span id="currentCard">01</span><span class="counter-line"></span><span id="totalCards">15</span></div></div><div class="flashcard-wrap"><button class="round-arrow" id="prevCard" aria-label="Cartão anterior">←</button><button class="flashcard" id="flashcard" aria-label="Virar cartão"><span id="cardTopic" class="card-topic"></span><span id="cardFace" class="card-face"></span><span id="cardHint" class="card-hint">TOQUE PARA VIRAR <span>↻</span></span></button><button class="round-arrow" id="nextCard" aria-label="Próximo cartão">→</button></div><div class="card-controls"><div class="dots" id="cardDots"></div><button class="button quiet" id="shuffleCards">Embaralhar <span>⤨</span></button><button class="button primary" id="knowCard">Já sei <span>✓</span></button></div></div>
+    <section id="disciplinas" class="section disciplines-section">
+      <div class="section-head"><div><p class="eyebrow">01 / SUA PRÓXIMA TRILHA</p><h2>Estude por assunto.<br><em>Avance no seu ritmo.</em></h2></div><p class="section-description">Cada disciplina reúne explicações, materiais de apoio e formas diferentes de revisar. Começamos com Gestão de Pessoas e vamos ampliar o portal.</p></div>
+      <div class="catalog-tools"><label class="search-box"><span aria-hidden="true">⌕</span><input id="disciplineSearch" type="search" placeholder="Busque uma disciplina ou tema" aria-label="Buscar disciplinas ou temas"><kbd>/</kbd></label><div class="catalog-count"><span class="live-dot"></span><span id="catalogCount">1 disciplina disponível</span></div></div>
+      <div id="disciplineGrid" class="discipline-grid">
+        <article class="discipline-card featured" data-search="gestão de pessoas psicologia organizacional trabalho pot burnout cultura clima equipes motivação seleção treinamento">
+          <div class="card-topline"><span class="status status-live"><i></i> DISPONÍVEL AGORA</span><span class="card-index">01</span></div>
+          <div class="discipline-art art-people" aria-hidden="true"><span class="art-sun"></span><span class="art-ring ring-one"></span><span class="art-ring ring-two"></span><span class="art-glyph">↗</span><span class="art-word art-word-a">PESSOA</span><span class="art-word art-word-b">TRABALHO</span></div>
+          <div class="discipline-copy"><p class="card-category">PSICOLOGIA ORGANIZACIONAL E DO TRABALHO</p><h3>Gestão de Pessoas</h3><p>Trabalho, cultura, equipes, seleção, desenvolvimento, motivação e saúde no trabalho — com casos para analisar e cartões para revisar.</p><div class="card-tags"><span>8 temas</span><span>8 estudos de caso</span><span>15 cartões</span></div><a class="card-link" href="gestao-de-pessoas.html">Entrar na disciplina <span>↗</span></a></div>
+        </article>
+        <article class="discipline-card coming" data-search="psicologia social grupos relações sociedade cultura em construção">
+          <div class="card-topline"><span class="status status-soon"><i></i> TRILHA EM CONSTRUÇÃO</span><span class="card-index">02</span></div><div class="coming-art"><span>EU</span><b>↔</b><span>OUTROS</span></div>
+          <div class="discipline-copy"><p class="card-category">PESSOAS, GRUPOS E SOCIEDADE</p><h3>Psicologia Social</h3><p>Um espaço planejado para conceitos, autores e situações do cotidiano social.</p><span class="coming-link">A caminho <span>✳</span></span></div>
+        </article>
+        <article class="discipline-card coming" data-search="desenvolvimento humano ciclo de vida infância adolescência adulto envelhecimento em construção">
+          <div class="card-topline"><span class="status status-soon"><i></i> TRILHA EM CONSTRUÇÃO</span><span class="card-index">03</span></div><div class="coming-art art-growth"><span>○</span><b>↗</b><span>◉</span></div>
+          <div class="discipline-copy"><p class="card-category">CICLO DE VIDA E CONTEXTOS</p><h3>Desenvolvimento Humano</h3><p>Uma futura trilha para estudar mudanças, relações e desenvolvimento ao longo da vida.</p><span class="coming-link">A caminho <span>✳</span></span></div>
+        </article>
+        <article class="discipline-card coming" data-search="métodos pesquisa psicologia ciência evidências pesquisa em construção">
+          <div class="card-topline"><span class="status status-soon"><i></i> TRILHA EM CONSTRUÇÃO</span><span class="card-index">04</span></div><div class="coming-art art-research"><span>?</span><b>⌕</b><span>!</span></div>
+          <div class="discipline-copy"><p class="card-category">CIÊNCIA E INVESTIGAÇÃO</p><h3>Métodos de Pesquisa</h3><p>Uma futura trilha sobre perguntas de pesquisa, métodos, evidências e leitura crítica.</p><span class="coming-link">A caminho <span>✳</span></span></div>
+        </article>
+      </div>
+      <p id="searchEmpty" class="search-empty" hidden>Nenhuma trilha encontrada. Tente outro termo.</p>
+      <div class="catalog-foot"><span>O portal cresce com curadoria e referências claras.</span><a href="#sobre">Como escolhemos os conteúdos <span>↗</span></a></div>
     </section>
 
-    <section id="escrever" class="content-section">
-      <div class="section-heading"><div><p class="eyebrow">PARTE 03 / PRODUÇÃO DISCURSIVA</p><h2>Agora, escreva você</h2><p class="section-sub">Escolha um tema. O texto é salvo automaticamente neste aparelho; quando o mural coletivo estiver conectado, você poderá contribuir com uma resposta anônima.</p></div></div>
-      <div class="writing-layout"><div class="writing-controls"><label for="writingTopic">Tema ou pergunta</label><select id="writingTopic"></select><div class="writing-prompt"><span class="eyebrow">ENUNCIADO</span><p id="writingPrompt"></p></div><label for="writingAnswer">Sua resposta</label><textarea id="writingAnswer" maxlength="6000" placeholder="Organize sua resposta: diagnóstico, conceito, relação com o caso e proposta de intervenção..."></textarea><div class="write-meta"><span id="writeWordCount">0 palavras</span><span id="saveStatus" role="status">Rascunho salvo neste aparelho.</span></div><div class="write-actions"><button id="saveDraft" class="button quiet">Salvar rascunho</button><button id="checkWriting" class="button primary">Ver feedback de estudo <span>↗</span></button></div><div id="writingFeedback" class="feedback" hidden aria-live="polite"></div></div><aside class="contribute-panel"><div class="contribute-icon">✳</div><h3>Mural coletivo</h3><p id="cloudStatus">Banco coletivo ainda não conectado. Você pode escrever e salvar seu rascunho neste aparelho.</p><label class="consent-row"><input type="checkbox" id="shareAnswer" disabled><span>Quando o banco estiver ativo, autorizo o envio anônimo desta resposta para que outras pessoas possam estudar com ela.</span></label><button id="submitContribution" class="button primary" disabled>Contribuir com o mural</button><p class="privacy-note">Não digite nome, e-mail, telefone ou dados pessoais. As respostas enviadas ao mural serão visíveis para quem acessar o site.</p></aside></div>
-      <section class="community-board" aria-labelledby="communityTitle"><div class="section-heading compact"><div><p class="eyebrow">RESPOSTAS COMPARTILHADAS</p><h2 id="communityTitle">Mural de estudo</h2><p class="section-sub" id="communityState">Aguardando conexão com o banco coletivo.</p></div><button id="refreshCommunity" class="button quiet" disabled>Atualizar</button></div><div id="communityAnswers" class="community-list"><p class="empty-state">Quando o banco coletivo for conectado, contribuições anônimas aparecerão aqui.</p></div></section>
+    <section id="como-estudar" class="section study-section">
+      <div class="section-head"><div><p class="eyebrow">02 / APRENDER FAZENDO</p><h2>Não só leia.<br><em>Pratique Psicologia.</em></h2></div><p class="section-description">Cada trilha pode combinar diferentes ferramentas. Na disciplina já disponível, você encontra os recursos abaixo.</p></div>
+      <div class="study-grid">
+        <a class="study-feature" href="gestao-de-pessoas.html#conteudos"><span class="feature-number">01</span><span class="feature-icon icon-read">↗</span><h3>Leia com contexto</h3><p>Sínteses, mapas mentais e os materiais usados na preparação, reunidos no mesmo lugar.</p><span class="feature-arrow">Ver conteúdos <b>↗</b></span></a>
+        <a class="study-feature" href="gestao-de-pessoas.html#pratica"><span class="feature-number">02</span><span class="feature-icon icon-cards">▤</span><h3>Revise ativamente</h3><p>Cartões e estudos de caso ajudam a recuperar conceitos e testar sua compreensão.</p><span class="feature-arrow">Praticar agora <b>↗</b></span></a>
+        <a class="study-feature" href="gestao-de-pessoas.html#escrever"><span class="feature-number">03</span><span class="feature-icon icon-write">✎</span><h3>Construa sua resposta</h3><p>Escreva, receba um feedback de cobertura e compare seu raciocínio com um exemplo.</p><span class="feature-arrow">Treinar escrita <b>↗</b></span></a>
+        <div class="study-feature feature-community"><span class="feature-number">04</span><span class="feature-icon icon-community">✳</span><h3>Aprenda em comunidade</h3><p>Respostas enviadas com autorização alimentam o mural coletivo da disciplina.</p><a class="feature-arrow" href="gestao-de-pessoas.html#escrever">Conhecer o mural <b>↗</b></a></div>
+      </div>
     </section>
 
-    <section class="method-section"><div class="method-mark">✳</div><div><p class="eyebrow">ROTEIRO ESTILO ENADE</p><h2>Diagnostique. Fundamente. Aplique. Proponha. Avalie.</h2><p>Construa uma resposta que explique o raciocínio, use evidências do caso e proponha ações possíveis.</p></div><div class="method-steps"><span><b>01</b> Diagnóstico</span><span><b>02</b> Conceito</span><span><b>03</b> Aplicação</span><span><b>04</b> Intervenção e avaliação</span></div></section>
-    <footer><span>REVISÃO DE GESTÃO DE PESSOAS</span><a href="#conteudos">Voltar ao início ↑</a></footer>
+    <section id="sobre" class="manifesto-section">
+      <div class="manifesto-symbol">ψ</div><div class="manifesto-copy"><p class="eyebrow">03 / SOBRE O PORTAL</p><h2>Psicologia pede curiosidade,<br>contexto e responsabilidade.</h2><p>Este espaço é para apoiar a formação: organizar conteúdos, levantar boas perguntas e praticar a aplicação de conceitos. Não substitui as aulas, as fontes originais, a supervisão docente nem a atuação profissional.</p></div>
+      <div class="manifesto-values"><div><span>01</span><b>Referências à vista</b><p>Materiais usados em cada trilha devem ser identificados para você poder conferir e aprofundar.</p></div><div><span>02</span><b>Olhar contextual</b><p>Comportamentos e experiências são estudados considerando pessoas, relações e condições.</p></div><div><span>03</span><b>Ética no aprendizado</b><p>Um recurso educacional não faz diagnóstico, psicoterapia nem aconselhamento clínico.</p></div></div>
+    </section>
+
+    <section class="ai-section"><div class="ai-mark" aria-hidden="true"><span>ψ</span><i></i><i></i><i></i></div><div class="ai-copy"><p class="eyebrow">UMA IDEIA PARA O FUTURO</p><h2>Uma IA para estudar Psicologia?<br><em>Sim — com bons limites.</em></h2><p>É possível criar um assistente educacional que responda com base em materiais selecionados, indique de onde tirou cada informação e ajude a revisar conceitos, casos e respostas.</p><div class="ai-guardrails"><span>Fontes verificáveis</span><span>Escopo educacional</span><span>Sem diagnóstico ou terapia</span></div></div><div class="ai-side"><span class="ai-badge">POSSÍVEL PRÓXIMA ETAPA</span><p>Para isso, o portal precisaria de uma conexão segura com um serviço de IA. A chave ficaria no servidor, nunca exposta no navegador; também seria necessário definir fontes, limites e custos.</p><span class="ai-next-step">Planejável para uma próxima versão</span></div></section>
+
+    <section class="closing-section"><div><p class="eyebrow">UM ASSUNTO POR VEZ</p><h2>Comece pela trilha<br>que já está pronta.</h2></div><a class="button button-lime" href="gestao-de-pessoas.html">Estudar Gestão de Pessoas <span>↗</span></a></section>
   </main>
+  <footer class="site-footer"><a class="wordmark" href="#inicio"><span class="logo-symbol">ψ</span><span>Psi em Curso<span class="wordmark-dot">.</span></span></a><span>PORTAL DE ESTUDOS DE PSICOLOGIA</span><a href="#inicio">Voltar ao início ↑</a></footer>
 </body>
 </html>
